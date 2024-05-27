@@ -2,6 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { CloseButton, Content, Overlay } from './styled';
 import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react';
 import { TransactionType, TransactionTypeButton } from './styled'
+
 export const NweTransactionModal = () => {
   return (
     <Dialog.Portal>
