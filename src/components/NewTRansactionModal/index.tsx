@@ -11,7 +11,7 @@ export const NweTransactionModal = () => {
           Nova transação
         </Dialog.Title>
         <CloseButton>
-          <X size={24}/>
+          <X size={ 18 } />
         </CloseButton>
         <form action="">
           <input type="text" placeholder='Descrição' required/>
@@ -19,12 +19,12 @@ export const NweTransactionModal = () => {
           <input type="text" placeholder='Categoria' required/>
 
           <TransactionType>
-            <TransactionTypeButton variant='income'>
-              <ArrowCircleUp />
+            <TransactionTypeButton variant='income' value='income'>
+              <ArrowCircleUp size={ 20 } />
               Entrada
             </TransactionTypeButton>
-            <TransactionTypeButton variant='outcome'>
-              <ArrowCircleDown />
+            <TransactionTypeButton variant='outcome' value="outcome">
+              <ArrowCircleDown size={ 20 } />
               Saída
             </TransactionTypeButton>
 
