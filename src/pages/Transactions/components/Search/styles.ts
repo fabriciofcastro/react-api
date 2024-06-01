@@ -28,12 +28,18 @@ button {
   border: 1px solid ${({theme}) => theme['green-300']};
   font-weight: bold;
   border-radius: 6px;
+  cursor: pointer;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: ${({theme}) => theme["green-500"]};
     color: ${({theme}) => theme.white};
     border-color: ${({theme}) => theme['green-500']};
-    transition: background 0.2s ease(), color 0.2s ease, border-color 0.2s ease;
+    transition: background-color 0.2s ease(), color 0.2s ease, border-color 0.2s ease;
+    cursor: not-allowed;
+  }
+
+  &:disabled {
+    opacity: 0.6;
   }
 }
 

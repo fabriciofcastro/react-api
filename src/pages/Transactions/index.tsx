@@ -1,9 +1,9 @@
 import { useContext } from "react"
 import { Header } from "../../components/Header"
 import { Summary } from "../../components/Summary"
-import { Search } from "./components/Search"
+import { SearchForm } from "./components/Search"
 import { PriceHighlight, TransactionContainer, TransactionTable } from "./styles"
-import { TransactionContext } from "../../context/transactionsContex"
+import { TransactionContext } from "../../context/transactionsContext"
 import { dateFormatter, priceFormatter } from "../../../src/utils/formatter"
 
 
@@ -17,7 +17,7 @@ export const Transactions = () => {
       <Summary />
 
       <TransactionContainer >
-        <Search />
+        <SearchForm />
         <TransactionTable>
           <tbody>
             { transactions.map((transaction) => {

@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { TransactionContext } from "../context/transactionsContex"
+import { TransactionContext } from "../context/transactionsContext"
 
 export const useSummary = () => { 
   const { transactions } = useContext(TransactionContext)
